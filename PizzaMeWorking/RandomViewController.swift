@@ -53,12 +53,17 @@ class RandomViewController: UIViewController {
 
     }
     @IBAction func callPizzaButtonPressed(sender: UIButton) {
-        print("pizza call made to \(pizzaItem!.phoneNumber!)")
-        if let phoneCallURL:NSURL = NSURL(string: "tel://\(pizzaItem!.phoneNumber!)") {
-            let application:UIApplication = UIApplication.sharedApplication()
-            if (application.canOpenURL(phoneCallURL)) {
-                application.openURL(phoneCallURL);
-            }
+        let formatedNumber = pizzaItem!.phoneNumber!.componentsSeparatedByCharactersInSet(NSCharacterSet.decimalDigitCharacterSet().invertedSet).joinWithSeparator("")
+//        if let phoneCallURL:NSURL = NSURL(string: "tel://\(formatedNumber)") {
+//            let application:UIApplication = UIApplication.sharedApplication()
+//            if (application.canOpenURL(phoneCallURL)) {
+//                print("pizza call made to \(pizzaItem!.phoneNumber!)")
+//                application.openURL(phoneCallURL);
+//            }
+//        }
+        if let url = NSURL(string: "tel://\(formatedNumber)") {
+            print("pizza call made to \(pizzaItem!.phoneNumber!)")
+            UIApplication.sharedApplication().openURL(url)
         }
     }
     
