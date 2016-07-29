@@ -37,6 +37,7 @@ class MapViewController: UIViewController, MKMapViewDelegate , CLLocationManager
         
         // For use in foreground
         self.locationManager.requestWhenInUseAuthorization()
+        
     }
     
 //-------------------------- outlets and actions and variables --------------------------//
@@ -49,7 +50,7 @@ class MapViewController: UIViewController, MKMapViewDelegate , CLLocationManager
     let locationManager = CLLocationManager()
     var anonArray: [MKPointAnnotation] = []
     var itemsArray: [MKMapItem] = []
-    var pizzaForce: Bool?
+    let pizzaBool = UIApplication.sharedApplication().delegate as! AppDelegate
     
     
 //-------------------------- map View functions --------------------------//
@@ -125,6 +126,9 @@ class MapViewController: UIViewController, MKMapViewDelegate , CLLocationManager
                         self.itemsArray.append(item)
                     }
                     print(self.itemsArray.count)
+                }
+                if self.pizzaBool.pizzaForce {
+                    self.performSegueWithIdentifier("pizzaMeSegue", sender: nil)
                 }
             })//close search
     }//close search for pizza

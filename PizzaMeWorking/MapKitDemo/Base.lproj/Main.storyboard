@@ -47,7 +47,7 @@
                             <fontDescription key="fontDescription" type="system" pointSize="40"/>
                             <state key="normal" title="Pizza Me"/>
                             <connections>
-                                <segue destination="oTp-aK-Iln" kind="show" id="qJE-dG-ci2"/>
+                                <segue destination="oTp-aK-Iln" kind="show" identifier="pizzaMeSegue" id="qJE-dG-ci2"/>
                             </connections>
                         </button>
                     </navigationItem>
@@ -239,6 +239,6 @@
         <image name="pizzaButton1.png" width="406" height="404"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2Uw-nh-hc0"/>
+        <segue reference="qJE-dG-ci2"/>
     </inferredMetricsTieBreakers>
 </document>

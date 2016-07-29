@@ -13,9 +13,11 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    internal var pizzaForce: Bool = false
 
     func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
         print("Force Touch accepted!")
+        pizzaForce = true
         
 //        let tabController = segue.destinationViewController as! UITabBarController
 //        let navController = initialTabController.topViewController as! UINavigationController
