@@ -78,15 +78,14 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="RtS-7J-kgI" secondAttribute="height" multiplier="203:202" id="IZv-5h-8fS"/>
                                 </constraints>
-                                <state key="normal" image="pizzaMeTran-2.png"/>
+                                <state key="normal" image="pizzaButton1.png"/>
                                 <connections>
                                     <action selector="pizzaMeButtonPressed:" destination="oTp-aK-Iln" eventType="touchUpInside" id="8OC-cu-XC7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="A9d-eK-Jyd">
                                 <rect key="frame" x="20" y="515" width="560" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Button needs to be bigger"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <connections>
                                     <action selector="callPizzaButtonPressed:" destination="oTp-aK-Iln" eventType="touchUpInside" id="feM-3q-PMg"/>
                                 </connections>
@@ -229,7 +228,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pizzaMeTran-2.png" width="406" height="404"/>
+        <image name="pizzaButton1.png" width="406" height="404"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="2Uw-nh-hc0"/>
