@@ -49,6 +49,7 @@ class MapViewController: UIViewController, MKMapViewDelegate , CLLocationManager
     let locationManager = CLLocationManager()
     var anonArray: [MKPointAnnotation] = []
     var itemsArray: [MKMapItem] = []
+    var pizzaForce: Bool?
     
     
 //-------------------------- map View functions --------------------------//

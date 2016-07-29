@@ -16,11 +16,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
         print("Force Touch accepted!")
-        let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let initialViewController : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("random") as UIViewController
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        self.window?.rootViewController = initialViewController
-        self.window?.makeKeyAndVisible()
+        
+//        let tabController = segue.destinationViewController as! UITabBarController
+//        let navController = initialTabController.topViewController as! UINavigationController
+//        let controller = navController.topViewController as! MapViewController
+        
+//        let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let initialTabController : UITabBarController = mainStoryboard.instantiateViewControllerWithIdentifier("pizzaNav") as! UITabBarController
+//        let navController = initialTabController.topViewController as! UINavigationController
+//        let controller = navController.topViewController as! MapViewController
+        
+//        let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let initialViewController : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("mapView") as UIViewController
+//        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+//        self.window?.rootViewController = initialViewController
+//        self.window?.makeKeyAndVisible()
         
     }
     
