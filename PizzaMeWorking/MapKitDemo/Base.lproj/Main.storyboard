@@ -84,7 +84,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="A9d-eK-Jyd">
-                                <rect key="frame" x="20" y="515" width="560" height="36"/>
+                                <rect key="frame" x="20" y="505" width="560" height="36"/>
                                 <color key="backgroundColor" red="0.93488138914108276" green="0.99583917856216431" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <connections>
@@ -94,7 +94,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lUz-nx-R4D" firstAttribute="top" secondItem="A9d-eK-Jyd" secondAttribute="bottom" id="5Y3-Vc-C9U"/>
+                            <constraint firstItem="lUz-nx-R4D" firstAttribute="top" secondItem="A9d-eK-Jyd" secondAttribute="bottom" constant="10" id="5Y3-Vc-C9U"/>
                             <constraint firstItem="A9d-eK-Jyd" firstAttribute="centerX" secondItem="Oas-AN-meZ" secondAttribute="centerX" id="BnP-cW-04z"/>
                             <constraint firstItem="A9d-eK-Jyd" firstAttribute="leading" secondItem="Oas-AN-meZ" secondAttribute="leadingMargin" id="LCE-tT-vwt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="A9d-eK-Jyd" secondAttribute="trailing" id="mxJ-Qn-FYJ"/>
@@ -117,17 +117,17 @@
         <scene sceneID="7WZ-76-UzH">
             <objects>
                 <tableViewController id="3si-9u-zCZ" customClass="ListTableViewController" customModule="PizzaMe" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="lwO-kn-37a">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="lwO-kn-37a">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <mapView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="oXC-Jo-jPe">
-                            <rect key="frame" x="0.0" y="176" width="600" height="44"/>
+                            <rect key="frame" x="0.0" y="136" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </mapView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="pizzaCell" textLabel="gUs-Uf-Eob" detailTextLabel="IFA-Xm-a7a" style="IBUITableViewCellStyleValue1" id="PAL-pd-AVC">
-                                <rect key="frame" x="0.0" y="114" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PAL-pd-AVC" id="yW5-de-qhC">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>

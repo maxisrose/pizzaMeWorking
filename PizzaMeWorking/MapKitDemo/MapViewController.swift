@@ -71,6 +71,7 @@ class MapViewController: UIViewController, MKMapViewDelegate , CLLocationManager
         view.canShowCallout = true
         return view
     }
+    
 
 //-------------------------- location manager functions --------------------------//
     
@@ -142,9 +143,13 @@ class MapViewController: UIViewController, MKMapViewDelegate , CLLocationManager
         do {
             player = try AVAudioPlayer(contentsOfURL: url)
             guard let player = player else { return }
+            if player.playing{
+                player.stop()
+            }else{
+                player.prepareToPlay()
+                player.play()
+            }
             
-            player.prepareToPlay()
-            player.play()
         } catch let error as NSError {
             print(error.description)
         }
